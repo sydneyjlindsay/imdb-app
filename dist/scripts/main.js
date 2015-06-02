@@ -23,14 +23,22 @@ $(document).ready(function() {
 	$('#search-form').on('submit', function(e) {
 		e.preventDefault();
 		var query = $('#movie-query').val();
-
 		myRouter.navigate('search/'+query, {trigger: true});
 
 		function onReceivedMovies(movies) {
-			console.log('onReceivedMovies');
-			console.log(movies); 
+			
+			var movieString = '';
+			for(var i=0; i<movies.Search.length; i++) {
+				
+				var searchResults = movies.Search;
+				var allMovies = searchResults[i].Title;
 
-			console.log(movies.Search[0].Title);
+				console.log(allMovies);
+				
+				movieString += '<div>'+allMovies+'</div>';				
+			}
+
+			$('#movie-list').html(movieString);
 		}
 
 		$.get(
@@ -39,7 +47,5 @@ $(document).ready(function() {
 			onReceivedMovies, 
 			'json'
 		);
-
 	});
-
 });
