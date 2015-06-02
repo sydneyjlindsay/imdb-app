@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IMDb App</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+	<main>
+	<!-- Home page with search box --> 
+		<section class="page" id="home">
+			<h1>IMDb Movie Watch List</h1>
+			<form id="search-form">
+				<input type="text" id="movie-query" placeholder="Search for a movie...">
+				<button type="submit" id="search-button">Search</button>
+			</form>
+		</section>
+
+		<!-- Search Results -->
+		<section class="page" id="search-results">
+			<h1>Search Results</h1>
+			<div id="movie-list"></div>
+		</section>
+	</main>
+
+<script type="text/javascript" src="bower_components/underscore/underscore-min.js"></script>
+<script type="text/javascript" src="bower_components/backbone/backbone-min.js"></script>
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/main.js"></script>
+</body>
+</html>
