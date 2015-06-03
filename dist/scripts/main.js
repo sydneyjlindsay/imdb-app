@@ -10,16 +10,20 @@ $(document).ready(function() {
 			console.log('home');
 			$('.page').hide(); 
 			$('#home').show();
+			$('#list').hide();
 		}, 
 
 		search: function(query) {
 			$('.page').hide();
 			$('#search-results').show();
+			$('#list').show();
+
 		}, 
 
 		newSearch: function(query) {
 			$('page').hide();
 			$('#search-results').show();
+			$('#list').show();
 		}
 	});
 
@@ -62,6 +66,7 @@ $(document).ready(function() {
 			for(var i=0; i<movieArray.length; i++) {
 			}
 		}
+		$('#movie-query').val('');
 	});
 
 	$('#new-search-form').on('submit', function(e) {
@@ -101,6 +106,7 @@ $(document).ready(function() {
 			for(var i=0; i<movieArray.length; i++) {
 			}
 		}
+		$('#new-movie-query').val('');
 	});
 });
 

@@ -1,3 +1,58 @@
 .page {
 	display: none;
 }
+
+body {
+	font-family: sans-serif;
+	text-align: center;
+}
+
+form {
+	padding-bottom: 20px;
+}
+#home {
+	margin-top: 30%;
+}
+
+#search-results {
+	margin-top: 15%;
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+	text-align: left;
+	/*border: 1px solid black;*/
+}
+
+#movie-list {
+	text-align: left;
+}
+#movie-list > div {
+	margin: 0.25em;
+	text-align: left;
+}
+
+#new-movie-query, #movie-query {
+	padding: 0.5em;
+	margin-top: 1em;
+}
+
+button {
+	padding: 0.5em;
+}
+
+#list > div {
+	width: 35%;
+	margin-left: 32.5%;
+	margin-right: 32.5%;
+	margin-top: 1em;
+	text-align: center;
+	border: 1px solid #cccccc;
+	border-radius: 10px;
+	text-shadow: 0px 0px 10px #cccccc;
+}
+
+#watch-list {
+	margin-left: 1em;
+	margin-bottom: 1em;
+	text-align: left;
+}
